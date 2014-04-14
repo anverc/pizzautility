@@ -1,0 +1,432 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    background-color: #000;
+}
+
+a {
+    color: #00e;
+}
+
+a:visited {
+    color: #551a8b;
+}
+
+a:hover {
+    color: #06e;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+#body-wrap div {
+  max-width: 300px !important;
+}
+
+#body-wrap {
+  max-width: none !important;
+}
+
+.pc-dialog,
+.pc-page {
+  display: table;
+  height: 100% !important;
+  width: 100% !important;
+  max-width: none !important;
+  border:2px solid;
+  border-radius:10px;
+  padding:2px;
+}
+
+.pc-wrapper-outter {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.pc-wrapper-inner {
+  margin-left: auto;
+  margin-right: auto; 
+  text-align: center;
+}
+
+.pc-page {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background:#fff;
+}
+.pc-dialog {
+  z-index: 100;
+  position: fixed;
+  background:rgba(40, 40, 40, 0.8);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99282828,endColorstr=#99282828);
+}
+.pc-dialog .pc-wrapper-inner {
+  background: #FFF;
+  border:2px solid;
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius:10px;
+}
+
+.pc-wrapper-inner,
+.pc-wrapper-inner-inherittopradius {
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
+}
+
+
+
+.pc-wrapper-infobox {
+  margin-left: auto;
+  margin-right: auto;
+  border:1px solid;
+  display: block;
+  text-align: center;
+}
+
+.ssd-entry,
+.ssd-result {
+  margin-left: auto;
+  margin-right: auto;
+  border:2px solid;
+  display: block;
+}
+
+.ssd-entry {
+  margin-top: 1em;
+  border-top-right-radius:1em;
+  border-top-left-radius:1em;
+  cursor: pointer;
+}
+
+.ssd-result {
+  margin-top: -2px;
+  font-size: x-small;
+  border-bottom-right-radius:1em;
+  border-bottom-left-radius:1em;
+  background-color: #EEAFAF;
+}
+
+.ssd-result-complete {
+  background-color: #AFEEEE !important;
+}
+
+.greenbutton {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #b8e356), color-stop(1, #a5cc52) );
+	background:-moz-linear-gradient( center top, #b8e356 5%, #a5cc52 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b8e356', endColorstr='#a5cc52');
+	background-color:#b8e356;
+	border:1px solid #83c41a;
+	display:inline-block;
+	color:#ffffff;
+}
+.greenbutton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a5cc52), color-stop(1, #b8e356) );
+	background:-moz-linear-gradient( center top, #a5cc52 5%, #b8e356 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a5cc52', endColorstr='#b8e356');
+	background-color:#a5cc52;
+}
+/* This button was generated using CSSButtonGenerator.com */
+.redbutton {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #ce0100) );
+	background:-moz-linear-gradient( center top, #fe1a00 5%, #ce0100 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100');
+	background-color:#fe1a00;
+	border:1px solid #d83526;
+	color:#ffffff;
+}
+.redbutton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ce0100), color-stop(1, #fe1a00) );
+	background:-moz-linear-gradient( center top, #ce0100 5%, #fe1a00 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0100', endColorstr='#fe1a00');
+	background-color:#ce0100;
+}
+/* This button was generated using CSSButtonGenerator.com */
+.greybutton {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	border:1px solid #dcdcdc;
+	color:#777777;
+}
+.greybutton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}
+/* This button was generated using CSSButtonGenerator.com */
+.bluebutton {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5) );
+	background:-moz-linear-gradient( center top, #79bbff 5%, #378de5 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5');
+	background-color:#79bbff;
+	border:1px solid #84bbf3;
+	color:#ffffff;
+}
+.bluebutton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
+	background-color:#378de5;
+}
+/* This button was generated using CSSButtonGenerator.com */
+.greenbutton,
+.redbutton,
+.greybutton,
+.bluebutton {
+   -webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+   border-radius: 0px;
+   padding: 4px 20px;
+	text-indent:0;
+	display:inline-block;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	font-style:normal;
+	text-decoration:none;
+	text-align:center;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+.widebutton {
+  width:100%;
+}
+
+
+.greenbutton:active,
+.redbutton:active,
+.greybutton:active,
+.bluebutton:active {
+	position:relative;
+	top:1px;
+}
+/* This button was generated using CSSButtonGenerator.com */
+
+/* This button was generated using CSSButtonGenerator.com */
+
+#pi-doughcalc-page-main-ingredients,
+#pi-doughcalc-page-main-desired,
+#pi-doughcalc-page-main-calculated {
+ font-family: sans-serif;
+ font-size: 0.6em; 
+}
+
+.ingredient-measurement {
+  float: left;
+  text-align: right;
+  width: 70px;
+  padding-right: 5px;
+  background-color: #EEF;
+}
+
+.ingredient-percent {
+  float: left;
+  text-align: right;
+  width: 40px;
+  padding-right: 5px;
+}
+
+.ingredient-name {
+  float: left;
+  text-align: left;
+  width: 180px;
+}
+
+#pi-doughcalc-page-main-desired:hover,
+.pn-doughcalc-row:hover,
+.pn-doughcalc-row:hover .ingredient-measurement,
+.pn-doughcalc-row:hover .ingredient-percent,
+.pn-doughcalc-row:hover .ingredient-name {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.pn-doughcalc-row {
+  clear: both;
+}
+
+.red {
+  color: #F33;
+}
+.orange {
+  color: #F93;
+}
+.blue {
+  color: #0CF;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/* Prevent callout */
+
+.nocallout {
+    -webkit-touch-callout: none;
+}
+
+.pressed {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* A hack for HTML5 contenteditable attribute on mobile */
+
+textarea[contenteditable] {
+    -webkit-appearance: none;
+}
+
+/* A workaround for S60 3.x and 5.0 devices which do not animated gif images if
+   they have been set as display: none */
+
+.gifhidden {
+    position: absolute;
+    left: -100%;
+}
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 0;
+    direction: ltr;
+    display: block;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -999em;
+}
+
+.ir br {
+    display: none;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/**
+ * Clearfix helper
+ * Used to contain floats: h5bp.com/q
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 800px) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for viewports that meet the condition */
+}
