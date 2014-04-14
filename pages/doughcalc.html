@@ -1,80 +1,80 @@
-
-        <div id='pi-doughcalc-page-main' class="pc-page hidden">
-          <div class='pc-wrapper-outter'>
-            <div class='pc-wrapper-inner'>
-              
-              <div style='margin-bottom: 1em'><input type='button' name='pn-button-mainmenu' class='greybutton'/></div>
-              <div><input type='button' value='add ingredient' name='add-ingredient'  class='greenbutton'/></div>
-
-              <div id='pi-doughcalc-page-main-desired' style='margin-top: 1em'><span style='font-size: 1.4em; font-weight: bold'>Desired Outcome</span>
-                  <div class='desired-weight'>g per ball</div>
-                  <div class='desired-count'>balls</div>
-                  <div class='desired-residue'>leftover</div>
-              </div>
-
-              <div id='pi-doughcalc-page-main-ingredients' style='margin-top: 1em'><span style='font-size: 1.4em; font-weight: bold'>Ingredients</span>
-                <div style='border-bottom: 1px solid;'>
-                  <div class='ingredient-measurement'>weight</div>
-                  <div class='ingredient-percent'>pct%</div>
-                  <div class='ingredient-name'>ingredient</div><div style="clear:both"></div>
-                </div>
-                <div id='pi-doughcalc-page-main-ingredients-end' style='border-top: 3px double; clear:both'><span class='red'>*</span> ingredient is counted towards flour %.<br/>
-                <span class='orange'>*</span> ingredient is counted towards starter %.<br/>
-                <span class='blue'>*</span> ingredient is counted towards water %.<br/>
-                <span class='black'>**</span> ingredient has been modified by 50% starter weight.</div>
-                <div id='pi-doughcalc-page-main-ingredients-errors' style='color: #f00'></div>
-              </div>
-              
-              <div style='margin-top: 2em'><input type='button' value='reset' name='doughcalc-reset'  class='redbutton'/></div>
-            </div>
-          </div>
-        </div>
-        
-        
-        <div id='pi-doughcalc-dialog-addingredient' class='pc-dialog hidden'>
-          <div class='pc-wrapper-outter'>
-            <div class='pc-wrapper-inner'>
-              <div id='pi-doughcalc-dialog-addingredient-title'>Add Ingredient</div>
-              <div>
-                <input type="text" name="ingredient" placeholder="ingredient name"/>
-                <input type="hidden" name="rowsindex"/>
-                <select name="ingredienttype" id='pi-doughcalc-dialog-addingredient-ingredienttype'>
-                  <option value="none" />is not flour or starter</option>
-                  <option value="isflour" />is flour</option>
-                  <option value="isstarter" />is starter</option>
-                  <option value="iswater" />is water</option>
-                </select>
-              </div>
-              <div>
-                <input type="number" name="percent" maxlength="6" value="0.000" step="0.001" max="100.000" min="0.000"/>%
-              </div>
-              <div style="text-align:right;margin-right:2px;">
-                <input type='button' name='add-ingredient' value='add' class='greenbutton'/>
-                <input type='button' name='cancel-ingredient' value='cancel' class='redbutton'/>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id='pi-doughcalc-dialog-modifysize' class='pc-dialog hidden'>
-          <div class='pc-wrapper-outter'>
-            <div class='pc-wrapper-inner'>
-              <div id='pi-doughcalc-dialog-addingredient-title'>Modify Size/Quantity</div>
-              <div>Ball Weight <input type="number" name="ballweight" maxlength="7" value="250.0" step="10.0" max="500.0" min="100.0"/> g</div>
-              <div># Balls <input type="number" name="balls" maxlength="3" value="1" step="1" max="100" min="1"/></div>
-              <div>Bowl Residue Compensation <input type="number" name="residuepercent" maxlength="6" value="4.0" step="0.01" max="100.00" min="0.00"/> %</div>
-              <div style="text-align:right;margin-right:2px;">
-                <input type='button' name='save-modifysize' value='save' class='greenbutton'/>
-                <input type='button' name='cancel-modifysize' value='cancel' class='redbutton'/>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id='pi-doughcalc-page-main-ingredient-template' class="hidden pn-doughcalc-row">
-          <div>
-            <div class='ingredient-measurement'>00g</div>
-            <div class='ingredient-percent'>0.0%</div>
-            <div class='ingredient-name'>name of ingredient</div>
-          </div>
+
+        <div id='pi-doughcalc-page-main' class="pc-page hidden">
+          <div class='pc-wrapper-outter'>
+            <div class='pc-wrapper-inner'>
+              
+              <div style='margin-bottom: 1em'><input type='button' name='pn-button-mainmenu' class='greybutton'/></div>
+              <div><input type='button' value='add ingredient' name='add-ingredient'  class='greenbutton'/></div>
+
+              <div id='pi-doughcalc-page-main-desired' style='margin-top: 1em'><span style='font-size: 1.4em; font-weight: bold'>Desired Outcome</span>
+                  <div class='desired-weight'>g per ball</div>
+                  <div class='desired-count'>balls</div>
+                  <div class='desired-residue'>leftover</div>
+              </div>
+
+              <div id='pi-doughcalc-page-main-ingredients' style='margin-top: 1em'><span style='font-size: 1.4em; font-weight: bold'>Ingredients</span>
+                <div style='border-bottom: 1px solid;'>
+                  <div class='ingredient-measurement'>weight</div>
+                  <div class='ingredient-percent'>pct%</div>
+                  <div class='ingredient-name'>ingredient</div><div style="clear:both"></div>
+                </div>
+                <div id='pi-doughcalc-page-main-ingredients-end' style='border-top: 3px double; clear:both'><span class='red'>*</span> ingredient is counted towards flour %.<br/>
+                <span class='orange'>*</span> ingredient is counted towards starter %.<br/>
+                <span class='blue'>*</span> ingredient is counted towards water %.<br/>
+                <span class='black'>**</span> ingredient has been modified by 50% starter weight.</div>
+                <div id='pi-doughcalc-page-main-ingredients-errors' style='color: #f00'></div>
+              </div>
+              
+              <div style='margin-top: 2em'><input type='button' value='reset' name='doughcalc-reset'  class='redbutton'/></div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div id='pi-doughcalc-dialog-addingredient' class='pc-dialog hidden'>
+          <div class='pc-wrapper-outter'>
+            <div class='pc-wrapper-inner'>
+              <div id='pi-doughcalc-dialog-addingredient-title'>Add Ingredient</div>
+              <div>
+                <input type="text" name="ingredient" placeholder="ingredient name"/>
+                <input type="hidden" name="rowsindex"/>
+                <select name="ingredienttype" id='pi-doughcalc-dialog-addingredient-ingredienttype'>
+                  <option value="none" />is not flour or starter</option>
+                  <option value="isflour" />is flour</option>
+                  <option value="isstarter" />is starter</option>
+                  <option value="iswater" />is water</option>
+                </select>
+              </div>
+              <div>
+                <input type="number" name="percent" maxlength="6" value="0.000" step="0.001" max="100.000" min="0.000"/>%
+              </div>
+              <div style="text-align:right;margin-right:2px;">
+                <input type='button' name='add-ingredient' value='add' class='greenbutton'/>
+                <input type='button' name='cancel-ingredient' value='cancel' class='redbutton'/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id='pi-doughcalc-dialog-modifysize' class='pc-dialog hidden'>
+          <div class='pc-wrapper-outter'>
+            <div class='pc-wrapper-inner'>
+              <div id='pi-doughcalc-dialog-addingredient-title'>Modify Size/Quantity</div>
+              <div>Ball Weight <input type="number" name="ballweight" maxlength="7" value="250.0" step="10.0" max="500.0" min="100.0"/> g</div>
+              <div># Balls <input type="number" name="balls" maxlength="3" value="1" step="1" max="100" min="1"/></div>
+              <div>Bowl Residue Compensation <input type="number" name="residuepercent" maxlength="6" value="4.0" step="0.01" max="100.00" min="0.00"/> %</div>
+              <div style="text-align:right;margin-right:2px;">
+                <input type='button' name='save-modifysize' value='save' class='greenbutton'/>
+                <input type='button' name='cancel-modifysize' value='cancel' class='redbutton'/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id='pi-doughcalc-page-main-ingredient-template' class="hidden pn-doughcalc-row">
+          <div>
+            <div class='ingredient-measurement'>00g</div>
+            <div class='ingredient-percent'>0.0%</div>
+            <div class='ingredient-name'>name of ingredient</div>
+          </div>
         </div>

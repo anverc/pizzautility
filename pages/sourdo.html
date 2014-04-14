@@ -1,52 +1,52 @@
-
-        <div id='pi-sourdo-page-main' class="pc-page hidden">
-          <div class='pc-wrapper-outter'>
-            <div class='pc-wrapper-inner'>
-              <div style='margin-bottom: 1em'><input type='button' name='pn-button-mainmenu' class='greybutton'/></div>
-              <div><input type='button' value='add time / temp' name='add-timestamp'  class='greenbutton'/></div>
-              <div id='pc-wrapper-infobox'>
-                Started with <span id='pi-sourdo-main-val-starterpct'></span>% starter<br />
-                <span id='pi-sourdo-main-val-timeremaining'>00:00</span> remaining at <span id='pi-sourdo-main-val-tempremaining'>0&deg;F</span><br />
-                <span id='pi-sourdo-main-val-doneby'></span>
-              </div>
-              <div style='margin-top: 2em'><input type='button' value='reset' name='reset' class='redbutton'/></div>
-            </div>
-            <div style='font-size: 0.6em; text-align: center;'>this app uses TXCraig1's<br /><a href='http://www.pizzamaking.com/forum/index.php?topic=22649.0' target='_blank'>Sourdough starter quantity predictive model</a><br />from <a href='http://pizzamaking.com/'>pizzamaking.com</a>'s forums.</div>
-          </div>
-        </div>
-
-        <div id='pi-sourdo-dialog-setpercent' class='pc-dialog hidden'>
-          <div class='pc-wrapper-outter'>
-            <div class='pc-wrapper-inner'>
-              <div>Starter Percent<br/><small>(flour: 100%)</small></div>
-              <div><input type='number' name='starter' min='0.00' max='100.00' step='0.1'/>%</div>
-              <div><input type='button' name='next' value='next' class='greenbutton'/></div>
-            </div>
-          </div>
-        </div>
-        
-        <div id='ssd-inputpage-add-timestamp' class='pc-dialog hidden'>
-          <div class='pc-wrapper-outter'>
-            <div class='pc-wrapper-inner'>
-              <div id='ssd-add-timestamp-title'>Add Timestamp</div>
-              <div>
-                <input type="text" name="timestamp" id="timestamp" pattern="\d{4}-\d{2}-\d{1} \d{2}:\d{2}[APap]" placeholder="YYYY-MM-DD HH:MMA" max-length="17"/><input type='button' name="now" id="now" value="now" class='greybutton'/>
-              </div>
-              <div>
-                <input type="hidden" name="rowsindex"/>
-                <input type="number" name="degrees" id="degrees" value="65"/>
-                <input type="radio" name="celcius" id="celcius" value="yes"/><span id='celcius-span'>&deg;C</span>
-                <input type="radio" name="celcius" id="fahrenheit" value="no"/><span id='fahrenheit-span'>&deg;F</span>
-              </div>
-              <div style="text-align:right;margin-right:2px;">
-                <input type='button' name='ssd-add-timestamp' id='ssd-add-timestamp' value='add' class='greenbutton'/>
-                <input type='button' name='ssd-cancel-timestamp' id='ssd-cancel-timestamp' value='cancel' class='redbutton'/>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-
-
-        <div id='ssd-sheet-etemplate' class="hidden"><div class='ssd-entry'></div><div class='ssd-result'></div></div>
+
+        <div id='pi-sourdo-page-main' class="pc-page hidden">
+          <div class='pc-wrapper-outter'>
+            <div class='pc-wrapper-inner'>
+              <div style='margin-bottom: 1em'><input type='button' name='pn-button-mainmenu' class='greybutton'/></div>
+              <div><input type='button' value='add time / temp' name='add-timestamp'  class='greenbutton'/></div>
+              <div id='pc-wrapper-infobox'>
+                Started with <span id='pi-sourdo-main-val-starterpct'></span>% starter<br />
+                <span id='pi-sourdo-main-val-timeremaining'>00:00</span> remaining at <span id='pi-sourdo-main-val-tempremaining'>0&deg;F</span><br />
+                <span id='pi-sourdo-main-val-doneby'></span>
+              </div>
+              <div style='margin-top: 2em'><input type='button' value='reset' name='reset' class='redbutton'/></div>
+            </div>
+            <div style='font-size: 0.6em; text-align: center;'>this app uses TXCraig1's<br /><a href='http://www.pizzamaking.com/forum/index.php?topic=22649.0' target='_blank'>Sourdough starter quantity predictive model</a><br />from <a href='http://pizzamaking.com/'>pizzamaking.com</a>'s forums.</div>
+          </div>
+        </div>
+
+        <div id='pi-sourdo-dialog-setpercent' class='pc-dialog hidden'>
+          <div class='pc-wrapper-outter'>
+            <div class='pc-wrapper-inner'>
+              <div>Starter Percent<br/><small>(flour: 100%)</small></div>
+              <div><input type='number' name='starter' min='0.00' max='100.00' step='0.1'/>%</div>
+              <div><input type='button' name='next' value='next' class='greenbutton'/></div>
+            </div>
+          </div>
+        </div>
+        
+        <div id='ssd-inputpage-add-timestamp' class='pc-dialog hidden'>
+          <div class='pc-wrapper-outter'>
+            <div class='pc-wrapper-inner'>
+              <div id='ssd-add-timestamp-title'>Add Timestamp</div>
+              <div>
+                <input type="text" name="timestamp" id="timestamp" pattern="\d{4}-\d{2}-\d{1} \d{2}:\d{2}[APap]" placeholder="YYYY-MM-DD HH:MMA" max-length="17"/><input type='button' name="now" id="now" value="now" class='greybutton'/>
+              </div>
+              <div>
+                <input type="hidden" name="rowsindex"/>
+                <input type="number" name="degrees" id="degrees" value="65"/>
+                <input type="radio" name="celcius" id="celcius" value="yes"/><span id='celcius-span'>&deg;C</span>
+                <input type="radio" name="celcius" id="fahrenheit" value="no"/><span id='fahrenheit-span'>&deg;F</span>
+              </div>
+              <div style="text-align:right;margin-right:2px;">
+                <input type='button' name='ssd-add-timestamp' id='ssd-add-timestamp' value='add' class='greenbutton'/>
+                <input type='button' name='ssd-cancel-timestamp' id='ssd-cancel-timestamp' value='cancel' class='redbutton'/>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+
+        <div id='ssd-sheet-etemplate' class="hidden"><div class='ssd-entry'></div><div class='ssd-result'></div></div>
         
