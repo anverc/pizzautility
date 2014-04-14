@@ -32,6 +32,7 @@ js/plugins.js
 
 js/vendor/modernizr-2.7.1.min.js
 js/vendor/jquery-2.1.0.min.js
+js/vendor/jquery-2.1.0.min.map
 js/vendor/add2home.js
 
 js/pizzautils_sourdo.js?version=<?php echo $pizzaversion; ?>
