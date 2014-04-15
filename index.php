@@ -1,4 +1,4 @@
-<!DOCTYPE html><?php require('version.php'); ?>
+<!DOCTYPE html><?php require('version.php'); ?> 
 <html class="no-js" manifest="offline.manifest.php">
     <head>
         <meta charset="utf-8">
